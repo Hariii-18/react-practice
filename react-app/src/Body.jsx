@@ -1,8 +1,11 @@
+import Card from "./card";
+
 function Body(){
     return(
-        <p>hello</p>
+        <>
+        <Card/>
+        </>     
 
-        
     );
 }
 

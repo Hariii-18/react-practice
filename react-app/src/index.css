@@ -1,0 +1,13 @@
+.Card{
+    max-height: 270px;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    max-width:fit-content;
+}
+.Card.img1{
+    max-width:60%;
+    height:auto;
+
+}

@@ -1,13 +1,16 @@
 .Card{
     max-height: 270px;
     border-radius: 10px;
-    display: block;
-    padding: 10px;
-    border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
     max-width:fit-content;
+    box-shadow:beige
+
 }
-.Card.img1{
-    max-width:60%;
-    height:auto;
+.img1{
+    border-radius: 50%;
+    height:100px;
+    max-width: 60%;
 
 }

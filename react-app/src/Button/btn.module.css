@@ -1,0 +1,24 @@
+/* button styling */
+.button {
+    height: 35px;
+    width: 75px;
+    background-color: rgba(0, 0, 255, 0.99);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    color: #ffffff;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 255, 0.85);
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}

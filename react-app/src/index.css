@@ -61,7 +61,7 @@
 }
 .card-Heading{
     margin: 5px;
-    color: rgb(104, 96, 96);
+    color: rgb(4, 4, 4);
 }
 .card-p{
     margin: 3px;
@@ -72,6 +72,7 @@
 .rating{
     margin: 3px;
 }
+
 
 /* footer styling */
 .footer{

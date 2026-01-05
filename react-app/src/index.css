@@ -39,40 +39,6 @@
 }
 
 
-/* Card Styling */
-.card {
-    border-radius: 10px;
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid hsla(0, 0%, 0%, 0.1);
-    margin: 10px;
-    text-align: center;
-    max-width: 100%;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-
-}
-
-.img1 {
-    /* border-radius: 0%; */
-    max-width: 90%;
-    max-height: fit-content;
-    padding: 10;
-
-}
-.card-Heading{
-    margin: 5px;
-    color: rgb(4, 4, 4);
-}
-.card-p{
-    margin: 3px;
-}
-.price{
-    margin: 3px;
-}
-.rating{
-    margin: 3px;
-}
-
 
 /* footer styling */
 .footer{

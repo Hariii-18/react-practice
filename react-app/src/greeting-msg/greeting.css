@@ -1,0 +1,19 @@
+.logged-in{
+    background-color: rgb(6, 204, 6);
+    padding: 10px;
+    border-radius: 5px;
+    max-width:none;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.not-loggedin{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width:none;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}

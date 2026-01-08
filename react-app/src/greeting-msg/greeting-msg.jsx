@@ -1,16 +1,17 @@
-import './greeting.css'
+import './greeting.css';
 import PropTypes from 'prop-types';
 
-
-function greeting(props) {
+function Greeting({ isLoggedIn, userName }) {
     return (
-        props.IsLoggedIn ?
-            <h2 className="logged-in">Welcome  {props.userName}</h2> :
-            <h2 className="not-loggedin"> Please Log in to continue !</h2>
+        <h2>
+            {isLoggedIn ? `Welcome back, ${userName}!` : `Hello, guest!`}
+        </h2>
     );
 }
-greeting = {
+
+Greeting.propTypes = {
     userName: PropTypes.string,
-    IsLoggedIn: PropTypes.bool,
-}
-export default greeting;
+    isLoggedIn: PropTypes.bool,
+};
+
+export default Greeting;

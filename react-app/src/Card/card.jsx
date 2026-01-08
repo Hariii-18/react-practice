@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import './card.css'
+import './card.css';
+
 
 function Card(props){
     // const Rating = 4.50;
@@ -29,10 +30,12 @@ function Card(props){
         // </div>
     );
 }
-Card.PropTypes = {
+Card.propTypes = {
+    img1: PropTypes.string,
+    Heading: PropTypes.string,
+    description: PropTypes.string,
     price: PropTypes.string,
     Rating: PropTypes.string,
-
 }
 
 export default Card ;

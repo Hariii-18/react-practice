@@ -2,7 +2,7 @@ import Card from "./Card/card";
 import Button from "./Button/button";
 import biryaniImg from "./assets/biryani.webp";
 import Greeting from "./Conditional-rendering/greeting-msg";
-import List from "./list-rendering/comp"
+import List from "./list-rendering/veg"
 
 function Body(){
     return(

@@ -1,0 +1,14 @@
+.Heading{
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: #50be0b;
+    border-radius: 5px;
+    
+}
+.list-item{
+    text-align: center;
+    text-decoration: none;
+    list-style-type:none;
+}

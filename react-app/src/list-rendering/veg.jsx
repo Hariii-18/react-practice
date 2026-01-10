@@ -1,16 +1,17 @@
 import './comp.css'
+import PropTypes from 'prop-types';
 
-function ListData({ items, category }) {
+function ListData({ items, category}) {
   return (
     <>
-      <h3>{category}</h3>
-      <ol>
+      <h3 className='Heading'>{category}</h3>
+      <ul className='list-item' >
         {items.map(item => (
           <li key={item.id}>
-            {item.name} - {item.calories}
+            {item.name} : {item.calories}
           </li>
         ))}
-      </ol>
+      </ul>
     </>
   );
 }
@@ -19,12 +20,12 @@ function List() {
 
   const fruits = [
     { id: 1, name: "Mango", calories: 56 },
-    { id: 2, name: "apple", calories: 95 },
+    { id: 2, name: "Apple", calories: 95 },
     { id: 3, name: "Banana", calories: 56 },
     { id: 4, name: "Grapes", calories: 95 },
   ];
 
-  const NonVeg = [
+  const Meat = [
     { id: 11, name: "Chicken", calories: 560 },
     { id: 12, name: "Mutton", calories: 795 },
     { id: 13, name: "Fish", calories: 456 },
@@ -35,8 +36,22 @@ function List() {
 
     <>
       {fruits.length > 0 && (<ListData items={fruits} category="Fruits" />)}
-      {NonVeg.length > 0 && (<ListData items={NonVeg} category="Meat" />)}
+      {Meat.length > 0 && (<ListData items={Meat} category="Meat" />)}
     </>
   );
 }
+
+ListData.propTypes = {
+  category: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    calories: PropTypes.number,
+  })),
+};
+ListData.defaultProps = {
+  category: "category",
+  items: [],
+};
+
 export default List;

@@ -14,7 +14,6 @@ function ListData({ items, category }) {
     </>
   );
 }
-// import Veg from './veg'
 
 function List() {
 
@@ -27,9 +26,9 @@ function List() {
 
   const NonVeg = [
     { id: 11, name: "Chicken", calories: 560 },
-    { id: 12, name: "Mutton", calories: 95 },
-    { id: 13, name: "Fish", calories: 56 },
-    { id: 14, name: "Red-Meat", calories: 95 },
+    { id: 12, name: "Mutton", calories: 795 },
+    { id: 13, name: "Fish", calories: 456 },
+    { id: 14, name: "Red-Meat", calories: 885 },
   ];
 
   return (
@@ -41,4 +40,3 @@ function List() {
   );
 }
 export default List;
-// export default ListData;

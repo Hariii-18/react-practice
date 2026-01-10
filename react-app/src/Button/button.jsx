@@ -1,7 +1,10 @@
 import styles from './btn.module.css'
 function Button() {
+    const HandleClick= () => console.log("Doneee!!");
+    const HandleClick2= (name) => console.log(`${name},your work has been Doneee!!`);
     return (
-        <button className={styles.button}>
+        // Click Events
+        <button className={styles.button} onClick={() =>HandleClick2("Harii")}>
             Click me
         </button>
     );

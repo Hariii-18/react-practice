@@ -1,18 +1,18 @@
 import './comp.css'
+import Veg from './veg'
 
-function List(){
-    const Fruits = [
-        {id:1 , name:"Mangoo", calories: 56},
-        {id:2 , name:"Mangoo", calories: 56},
-        {id:3 , name:"Mangoo", calories: 56},
-        {id:4 , name:"Mangoo", calories: 56},
+function List() {
 
+    const fruits = [
+        { id: 1, name: "hari", calories: 526 },
+        { id: 2, name: "apple", calories: 95 }
     ];
+
     return (
+
         <>
-        <List items ={Fruits} category="Fruits"/>
+            {fruits.length > 0 && (<Veg items={fruits} category="Fruits" />)}
         </>
     );
 }
-
 export default List;

@@ -1,8 +1,8 @@
 import Card from "./Card/card";
 import Button from "./Button/button";
 import biryaniImg from "./assets/biryani.webp";
-import Greeting from "./greeting-msg/greeting-msg";
-import Lists from "./list-rendering/comp"
+import Greeting from "./Conditional-rendering/greeting-msg";
+import List from "./list-rendering/comp"
 
 function Body(){
     return(
@@ -11,7 +11,7 @@ function Body(){
         <Greeting isLoggedIn={true} userName="Harii" />
         <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"4.5"} price={"₹250"} />
         <Button/>
-        <Lists/>
+        <List />
         </>     
 
     ); 

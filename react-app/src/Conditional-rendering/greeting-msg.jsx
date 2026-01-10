@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function Greeting({ isLoggedIn, userName }) {
     return (
-        <h2>
-            {isLoggedIn ? `Welcome back, ${userName}!` : `Hello, guest!`}
+        <h2 className={isLoggedIn ? "logged-in" : "not-loggedin"}>
+            {isLoggedIn ? `Welcome, ${userName}!` : `Hello guest, Please Log-in`}
         </h2>
     );
 }

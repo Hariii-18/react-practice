@@ -1,9 +1,9 @@
-*{
+* {
     padding: 10;
     margin: 10;
-    font-family:sans-serif;
-
+    font-family: sans-serif;
 }
+
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -12,7 +12,6 @@
     height: 60px;
     padding: 0 40px;
     background: #f8f8f8;
-    
 }
 
 .navbar p {
@@ -21,7 +20,8 @@
     color: #333;
     margin: 0;
     letter-spacing: 1px;
-    margin-right: 600px; /* Add space between p and ul */
+    margin-right: 600px;
+    /* Add space between p and ul */
 }
 
 .navbar ul {
@@ -39,9 +39,8 @@
 }
 
 
-
 /* footer styling */
-.footer{
+.footer {
     text-align: center;
     color: grey;
 }

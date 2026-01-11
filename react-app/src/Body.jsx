@@ -8,12 +8,11 @@ import Usestate from "./Use-State/useState";
 function Body(){
     return(
         <>
-        
         <Greeting isLoggedIn={true} userName="Harii" />
         <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"4.5"} price={"₹250"} />
         <Button/>
-        <Usestate/>
         <List/>
+        <Usestate/>
         </>     
 
     ); 

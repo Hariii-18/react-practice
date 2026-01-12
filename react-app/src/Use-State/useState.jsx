@@ -13,7 +13,7 @@ function Component() {
             <p className="use-state-count">count: {count}</p>
             <div className="use-state-buttons">
                 <button onClick={() => setcount(count + 1)}>Increment</button>
-                <button onClick={() => setcount(0)}>Initial</button>
+                <button onClick={() => setcount(0)}>Reset</button>
                 <button onClick={() => setcount(count - 1)}>Decrement</button>
             </div>
         </div>

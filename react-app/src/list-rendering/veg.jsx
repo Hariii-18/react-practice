@@ -35,8 +35,11 @@ function List() {
   return (
 
     <>
+    <hr />
+    <p className='para'>List Rendering</p>
       {fruits.length > 0 && (<ListData items={fruits} category="Fruits" />)}
       {Meat.length > 0 && (<ListData items={Meat} category="Meat" />)}
+      <hr />
     </>
   );
 }

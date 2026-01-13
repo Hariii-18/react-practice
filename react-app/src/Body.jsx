@@ -6,6 +6,7 @@ import List from "./list-rendering/veg"
 import Usestate from "./Use-State/useState";
 import LoginForm from "./Use-State/login-form";
 import Onchange from "./On-Change/onchange";
+import Colorpicker from "./On-Change/Color Picker/colorPicker"
 
 function Body(){
     return(
@@ -17,6 +18,7 @@ function Body(){
         <Usestate/>
         {/* <LoginForm/> */}
         <Onchange />
+        <Colorpicker/>
         </>     
 
     ); 

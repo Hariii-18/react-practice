@@ -7,6 +7,7 @@ import Usestate from "./Use-State/useState";
 import LoginForm from "./Use-State/login-form";
 import Onchange from "./On-Change/onchange";
 import Colorpicker from "./On-Change/Color Picker/colorPicker"
+import Updatefun from "./Update function/updatefun"
 
 function Body(){
     return(
@@ -19,6 +20,7 @@ function Body(){
         {/* <LoginForm/> */}
         <Onchange />
         <Colorpicker/>
+        <Updatefun/>
         </>     
 
     ); 

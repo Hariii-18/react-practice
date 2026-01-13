@@ -39,6 +39,7 @@ function OnChange() {
 
     return (
         <div className="container">
+            <hr />
             <p className="head">Onchange Event Handler:</p>
             <input className="inputs" placeholder="Enter your Name here" value={name} type="text" onChange={textonchange} />
             <p className="para">Name: {name}</p>
@@ -78,6 +79,7 @@ function OnChange() {
                 Female
             </label>
             <p className="para">Gender: {gender}</p>
+            <hr />
         </div>
     );
 }

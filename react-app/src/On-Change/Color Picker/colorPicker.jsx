@@ -11,7 +11,7 @@ function Colorpicker() {
 
     return (
         <div className="Container">
-            <hr />
+            
             <h1>Color Picker</h1>
             <div className="display-box">
                 <p className="color-display" style={{ backgroundColor: color }}>Selected Color: {color}</p>
@@ -19,6 +19,7 @@ function Colorpicker() {
             <label className="colorlabel">Select a color: </label>
             <input type="color"  onChange={colorhandler} />
             <hr />
+            
         </div>
 
     );

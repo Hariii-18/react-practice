@@ -3,7 +3,7 @@ import "./colorPicker.css"
 
 function Colorpicker() {
 
-    const [color, setcolor] = useState("");
+    const [color, setcolor] = useState(" ");
 
     function colorhandler(event) {
         setcolor(event.target.value);
@@ -16,8 +16,8 @@ function Colorpicker() {
             <div className="display-box">
                 <p className="color-display" style={{ backgroundColor: color }}>Selected Color: {color}</p>
             </div>
-            <label>Select a color: </label>
-            <input type="color" value="color" onChange={colorhandler} />
+            <label className="colorlabel">Select a color: </label>
+            <input type="color"  onChange={colorhandler} />
             <hr />
         </div>
 

@@ -12,7 +12,8 @@ function Colorpicker() {
     return (
         <div className="Container">
             
-            <h1>Color Picker</h1>
+            <h1>Color Picker </h1>
+            <p>~using OnChange event Handler</p>
             <div className="display-box">
                 <p className="color-display" style={{ backgroundColor: color }}>Selected Color: {color}</p>
             </div>

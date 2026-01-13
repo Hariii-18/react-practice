@@ -8,12 +8,17 @@ import LoginForm from "./Use-State/login-form";
 import Onchange from "./On-Change/onchange";
 import Colorpicker from "./On-Change/Color Picker/colorPicker"
 import Updatefun from "./Update function/updatefun"
+import UpdateObj from "./Update Object/updateObj"
 
 function Body(){
     return(
         <>
         <Greeting isLoggedIn={true} userName="Harii" />
         <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"4.5"} price={"₹250"} />
+        <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"3.9"} price={"₹350"} />
+        <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"5.0"} price={"₹300"} />
+        <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"4.5"} price={"₹200"} />
+        <Card img1={biryaniImg} Heading="Biryani" description="delicious hyderabadi biryani" Rating={"4.6"} price={"₹150"} />
         <Button/>
         <List/>
         <Usestate/>
@@ -21,6 +26,7 @@ function Body(){
         <Onchange />
         <Colorpicker/>
         <Updatefun/>
+        <UpdateObj/>
         </>     
 
     ); 

@@ -6,14 +6,10 @@
     margin-bottom: 0px;
 }
 
-.inputs{
-    padding: 10px;
-    font-size:medium;
-
-}
-
 .para{
     font-size: large;
+    padding: 0;
+    margin: 10px;
 }
 .head{
     font-size:x-large;
@@ -28,7 +24,6 @@
 }
 
 .radio{
-    padding:10px;
-    margin: 10px;
     font-size: large;
+    
 }

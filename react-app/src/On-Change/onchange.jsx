@@ -5,15 +5,17 @@
 import { useState } from "react";
 import "./onchange.css"
 
-function onChange() {
+function OnChange() {
 
     const [name, setName] = useState("");
 
     const [age, setAge] = useState("");
 
-    const [comment,setcomment] = useState("");
+    const [comment, setcomment] = useState("");
 
     const [state, setstate] = useState("");
+
+    const [gender, setgender] = useState("");
 
     function textonchange(event) {
         setName(event.target.value);
@@ -23,12 +25,16 @@ function onChange() {
         setAge(event.target.value);
     }
 
-    function CommentBox(event){
+    function CommentBox(event) {
         setcomment(event.target.value)
     }
 
-    function selectState(e){
+    function selectState(e) {
         setstate(e.target.value);
+    }
+
+    function selectgender(event) {
+        setgender(event.target.value);
     }
 
     return (
@@ -40,11 +46,11 @@ function onChange() {
             <input className="inputs" placeholder="Enter your age" type="number" value={age} onChange={AgeSetter} />
             <p className="para">Age:{age}</p>
 
-            <input className="inputs" placeholder="Write your Comment Here " value={comment} onChange={CommentBox}/>
+            <input className="inputs" placeholder="Write your Comment Here " value={comment} onChange={CommentBox} />
             <p className="para">Comment: {comment}</p>
 
             <select className="selector" value={state} onChange={selectState}>
-                <option value="" disabled selected>Select your State:</option>
+                <option value="" disabled >Select your State:</option>
                 <option value="Telangana">Telangana</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Karnataka">Karnataka</option>
@@ -53,9 +59,27 @@ function onChange() {
                 <option value="Uttar Pradesh">Uttar Pradesh</option>
             </select>
             <p className="para">State: {state}</p>
+
+            <label className="radio">
+                <input
+                    type="radio"
+                    value="Male"
+                    checked={gender === "male"}
+                    onChange={selectgender} />
+                Male
+            </label>
+
+            <label className="radio">
+                <input
+                    type="radio"
+                    value="Female"
+                    checked={gender === "female"}
+                    onChange={selectgender} />
+                Female
+            </label>
+            <p className="para">Gender: {gender}</p>
         </div>
     );
 }
-// 2:09:26
 
-export default onChange;
+export default OnChange;

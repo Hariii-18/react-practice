@@ -11,11 +11,13 @@ function Component() {
         <div className="use-state-container">
             <p className="use-state-title">Use State: </p>
             <p className="use-state-count">count: {count}</p>
-            <div className="use-state-buttons">
-                <button onClick={() => setcount(count + 1)}>Increment</button>
-                <button onClick={() => setcount(0)}>Reset</button>
+            <div className="use-state-buttons">        
                 <button onClick={() => setcount(count - 1)}>Decrement</button>
+                <button onClick={() => setcount(0)}>Reset</button>
+                <button onClick={() => setcount(count + 1)}>Increment</button>
             </div>
+                
+                
         </div>
     );
 }

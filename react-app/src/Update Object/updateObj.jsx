@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./updateObj.css"
 
+
+// If you are replacing everything → use an update object.
+
 function StudentDetails() {
 
     const [IdCard, setIdCard] = useState({

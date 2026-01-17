@@ -4,7 +4,7 @@ import "./updatefun.css"
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 
-
+// If the new value depends on the old value → use an update function.
 function LikesButton() {
 
     const [likes, setlikes] = useState(0);

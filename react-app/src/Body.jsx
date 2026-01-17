@@ -10,6 +10,7 @@ import Colorpicker from "./On-Change/Color Picker/colorPicker"
 import Updatefun from "./Update function/updatefun"
 import UpdateObj from "./Update Object/updateObj"
 import UpdateArray from "./Update Array Obj/update-array"
+import Qty from "./Update Array Obj/Qty-increase"
 
 function Body() {
     return (
@@ -29,6 +30,7 @@ function Body() {
             <Updatefun />
             <UpdateObj />
             <UpdateArray />
+            <Qty />
         </>
 
     );

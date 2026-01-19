@@ -41,6 +41,7 @@ function Cart() {
                     
                 </div>
             ))}
+            <hr />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './update-array'
+
 function Cart() {
     const [items, setItems] = useState([
         { id: 1001, name: "laptop", price: 51000, qty: 1 },
@@ -34,11 +35,11 @@ function Cart() {
                 <div key={items.id}>
                     <p>Name: {items.name}</p>
                     <p>price: {items.price}</p>
-                    <p>quantity: {items.qty}</p> 
+                    <p>quantity: {items.qty}</p>
                     <button className="btn" onClick={() => increaseqty(items.id)}>Increse Quantity +</button>
                     <button className="btn" onClick={() => decreaseqty(items.id)}>decrese Quantity +</button>
                     <br />
-                    
+
                 </div>
             ))}
             <hr />

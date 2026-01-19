@@ -16,14 +16,6 @@ function App() {
         );
         setStudents(updatedStudents);
     };
-    // const updatedList = (id) => {
-    //     const updatedMarks = students.map((student) => 
-    //         student.id === id 
-    //         ?{...student,marks: student.marks + 10}
-    //         :student
-    // );
-    //     setStudents(updatedList);
-    // };
 
     return (
         <div className="container">

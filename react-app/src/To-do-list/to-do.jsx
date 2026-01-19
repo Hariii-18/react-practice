@@ -20,20 +20,20 @@ function App() {
     }
 
     return (
-        <div>
+        <div className="Container">
             <div>
-                <h1>To Do List</h1>
+                <h1 className="heading">To Do List</h1>
                 <input type="text"
                     placeholder="Enter your Task"
                     value={newTask}
                     onChange={inputhandler} />
-                <button onClick={() => addTask(index)}>Add</button>
+                <button className="add-button" onClick={() => addTask(index)}>Add</button>
             </div>
             <ol>
                 {Tasks.map((tasks, index) =>
                     <li key={index}>
                         <span>{Tasks}</span>
-                        <button onClick={() => deleteTask(index)}>delete</button>
+                        <button className="delete-button" onClick={() => deleteTask(index)}>delete</button>
                     </li>
                 )}
 

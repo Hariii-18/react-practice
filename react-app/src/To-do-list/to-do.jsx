@@ -46,15 +46,16 @@ function Todo() {
     return (
         <div className="body">
             <h1>TO-DO List</h1>
+            <div className="top">
+                <input className="input-box"
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    type="text"
+                    placeholder="Enter your task"
+                />
 
-            <input className="input-box"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                type="text"
-                placeholder="Enter your task"
-            />
-
-            <button onClick={addTask}>Add</button>
+                <button onClick={addTask}>Add</button>
+            </div>
 
             <ol>
                 {tasks.map(task => (
@@ -69,11 +70,14 @@ function Todo() {
                         </span>
 
                         <button onClick={() => completeTask(task.id)}>
-                            {task.completed ? "Undo" : "Complete"}
+                            {task.completed ? "Undo" : "Completed"}
                         </button>
 
-                        <button onClick={() => importantTask(task.id)}>
-                            {task.important ? "Unstar" : "Star"}
+                        <button
+                            className="star-btn"
+                            onClick={() => importantTask(task.id)}
+                        >
+                            {task.important ? "★" : "☆"}
                         </button>
 
                         <button onClick={() => deleteTask(task.id)}>

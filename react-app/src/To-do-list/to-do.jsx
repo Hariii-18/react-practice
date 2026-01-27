@@ -44,10 +44,10 @@ function Todo() {
     };
 
     return (
-        <div>
+        <div className="body">
             <h1>TO-DO List</h1>
 
-            <input
+            <input className="input-box"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 type="text"

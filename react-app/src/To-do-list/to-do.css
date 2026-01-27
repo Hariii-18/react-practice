@@ -1,0 +1,27 @@
+/* List item base style */
+.list-item {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: normal;
+}
+
+/* Important task */
+.list-item.important {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+/* Task text */
+.task-text {
+  margin-right: 10px;
+}
+
+/* Completed task */
+.task-text.completed {
+  text-decoration: line-through;
+}
+
+/* Optional button spacing */
+.list-item button {
+  margin-right: 5px;
+}

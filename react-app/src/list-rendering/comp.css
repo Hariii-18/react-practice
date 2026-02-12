@@ -12,9 +12,12 @@
     text-align: center;
     text-decoration: none;
     list-style-type:none;
+        display: flex;
+    flex-direction:column;
 }
 .para{
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 10px;
+
 }

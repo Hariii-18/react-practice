@@ -12,6 +12,7 @@ import UpdateObj from "./Update Object/updateObj"
 import UpdateArray from "./Update Array Obj/update-array"
 import Qty from "./Update Array Obj/Qty-increase"
 import Todo from "./To-do-list/to-do"
+import Useeffect from "./Use Effect/useeffect"
 
 function Body() {
     return (
@@ -32,7 +33,8 @@ function Body() {
             <UpdateObj />
             <UpdateArray />
             <Qty />
-            <Todo/>
+            {/* <Todo /> */}
+            <Useeffect />
         </>
 
     );
